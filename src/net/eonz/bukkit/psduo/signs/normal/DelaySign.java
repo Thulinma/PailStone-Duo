@@ -101,10 +101,10 @@ public class DelaySign extends PSSign {
 					this.main.alert(this.getOwnerName(), "Could not understand period, defaulting to 20. (1sec)");
 				period = 20;
 			}
-			if (period > 500 || period <= 0) {
+			if (period > 5000 || period <= 0) {
 				period = 20;
 				if (!reload)
-					this.main.alert(this.getOwnerName(), "The period was either too long or too short. Allowed: 1-500");
+					this.main.alert(this.getOwnerName(), "The period was either too long or too short. Allowed: 1-5000");
 			}
 		} else {
 			period = 20;
